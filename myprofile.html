@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body{
+            background-color:  #f6ecf7;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        .sidebar{
+            width: 260px;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            background-color:#042331;
+        }
+        .sidebar header{
+            color: aliceblue;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            background-color: #063146;
+        }
+        .sidebar h3{
+            font-size: 15px;
+            color: #3e7d9c;
+            line-height: 60px;
+            display: block;
+            border: black;
+            padding-left: 30px;
+        }
+        .sidebar ul a{
+            font-size: 17px;
+            display: block;
+            line-height: 35px;
+            color: white;
+            border-top: 1px solid rgba(255,255,255,.1);
+            border-bottom: 1px solid black;
+            width: 100%;
+            height: 100%;
+            padding-left: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar a:hover{
+            color: lightblue;
+           padding-left: 18px;
+        }
+        .sidebar li i{
+            margin-right: 10px;
+        }
+        .mid{
+            margin: auto;
+            margin-left: 202px;
+            border-top: 1px solid rgba(255,255,255,.1);
+            border-bottom: 1px solid black;
+           }
+        .navbar{
+            display: inline-block;
+            background-color: white;
+            width: 100%;
+            height:51px;
+        }
+        .navbar ul{
+                padding-left: 100px;
+        }
+    
+        .navbar li{
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .navbar ul a{
+            text-align: center;
+            color: black;
+            font-size: 20px; 
+            padding-left: 70px;
+        }
+        .navbar ul a:hover{
+            color: red;
+            padding-right: 11px;
+        }
+        .btn{
+            position: absolute;
+            right: 10px;
+            top: 4px;
+            background-color: white;
+            margin-right: 20px;
+            margin-top: 6px;
+            padding: 6px 10px;
+            border-radius: 19px;
+            border:2px solid black;
+        }
+        .btn:hover{
+            color:black;
+            background-color: rgb(231, 225, 217);
+            transform:scale(1.1);
+        }
+        .Addroute{
+            width: 258px;
+            height: 57px;
+            margin-left:364px;
+            margin-top: 15px;
+            
+        }
+        .Addroute header{
+            font-size: 20px;
+      
+        }
+        span{
+            text-align: center;
+        }
+        .Addroute header,span{
+            margin: 6px;
+        }
+        .below{
+            background-color: white;
+            display: inline-block;
+            width: 500px;
+            margin-left:370px;
+            height: 440px; 
+        }
+        .below h3{
+            text-align: center;
+            margin-top: 13px;
+          
+        }
+        .side{
+            background-color: white;
+            display: inline-block;
+            width: 450px;
+            height: 300px;
+           margin-left: 150px;
+           
+        }
+        .side h3{
+            text-align: center;
+            margin-top: 13px;
+        }
+        .loginbtn{
+            padding-left: 15px;
+        }
+        .btns{
+            padding: 8px;
+            text-align: left;
+            width: 91%;
+        }
+        .btn1{
+            padding: 5px 204px;
+            border-radius: 20px;
+            font-size: 15px;
+            background-color: rgb(23, 23, 204);
+            color: white;
+        }
+        .passbtns{
+            padding-left: 15px;
+        }
+        .passbtn{
+            padding: 5px;
+            width: 90%;
+        }
+        .btn2{
+             padding: 5px 14px;
+             border-radius: 20px;
+            font-size: 12px;
+            background-color: rgb(23, 23, 204);
+            color: white;
+        }
+        .btn1:hover{
+           background-color: rgb(42, 42, 164);
+        }
+        .btn2:hover{
+            background-color: rgb(42, 42, 164);
+         }
+    
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <header>RoutBook</header>
+        <h3>ROUTES</h3>
+        <ul type="none">
+         <li><a href="myRoute.html"class="name1"><i class="fa fa-sharp fa-light fa-route"></i> My routes</a></li><br>
+         <li><a href="favourite.html"class="name2"><i class="fa fa-thin fa-heart"></i> Favorite routes</a></li><br>
+         <li><a href="searchOnMap.html"class="name3"><i class="fa fa-duotone fa-circle-plus"></i> Add routes</a></li>
+     </ul>
+     <h3>PEOPLE</h3>
+         <ul type="none">
+             <li><a href="myprofile.html"class="name4"><i class="fa fa-regular fa-user"></i> My profile</a></li><br>
+             <li><a href="index.html"class="name5"><i class="fa fa-thin fa-power-off"></i> Logout</a></li>
+         </ul>
+     </div>
+     <header>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="searchOnMap.html">Search on map</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="ContactUs.html">Contact us</a></li>
+                </ul>
+                <button type="button" class="btn">Add route <i class="fa fa-duotone fa-circle-plus"></i></buttton>
+            </nav>
+    </header>
+    
+    <div class="below">
+        <h3>Details</h3>   
+        <form action=""class="loginbtn">
+            <label for="name"><b>Name</b></label>
+            <div>
+                <input type="text"placeholder="Name" name="myname" id="name" class="btns" required>
+            </div>
+            <br>
+            <label for="Mymail"> <b>Email</b></label>
+            <div>
+                <input type="email" placeholder="abc@gamil.com" name="mymail" id="Mymail"class="btns" required>
+            </div>
+            <br>
+            <label for="name"><b>Contact</b></label>
+            <div>
+                <input type="text"placeholder="Contact" name="mycontact" id="contact" class="btns" required>
+            </div>
+            <br>
+            <label for="name"><b>Password</b></label>
+            <div>
+                <input type="text"placeholder="Password" name="mypassword" id="password" class="btns" required>
+            </div>
+            <br>
+            
+            <div>
+                <button class="btn1">Save</button>
+            </div>
+        </form>
+    </div>
+    
+         
+    
+  
+</body>
+</html>

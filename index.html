@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RouteBook</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-link {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .content {
+            text-align: center;
+            margin: 50px;
+        }
+
+        .interactive-text {
+            font-size: 24px;
+            color: #d33434;
+        }
+
+        .interactive-text:hover {
+            color: #ff4500;
+            cursor: pointer;
+        }
+        body {
+            background-image: url('https://cdn.pixabay.com/photo/2018/04/23/16/22/welcome-3344772_640.jpg'); /* Replace 'your-image-url.jpg' with the actual image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+           
+            color: white; /* Set text color to contrast with the background */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">RouteBook</div>
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+            <a class="nav-link" href="blog.html">Blog</a>
+
+            <a class="nav-link" href="login_Registration.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Welcome to RouteBook</h1>
+        <p class="interactive-text" onclick="showTravelInfo()">Explore the world with RouteBook!</p>
+    </div>
+
+    <script>
+        function showTravelInfo() {
+            alert("RouteBook helps you discover exciting routes around the world. Plan your next adventure!");
+        }
+    </script>
+</body>
+</html>

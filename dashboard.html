@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Dashboard</title>
+    <style>
+        .rating {
+            display: inline-block;
+            font-size: 0;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            font-size: 40px;
+            color: #ddd;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .rating label:before {
+            content: '★';
+            display: block;
+            color: gold;
+        }
+
+        .rating input:checked ~ label {
+            color: gold;
+        }
+    </style>
+</head>
+<body style="background-color: #f8f9fa;">
+    <div class="container-fluid">
+        <div class="row" style="background-color: #d5d5e4;">
+            <div class="row" style="background-color: #d5d5e4; height: 100%;">
+                <!-- Sidebar -->
+                <nav id="sidebar" class="col-md-2 d-none d-md-block bg-light">
+                    <div class="sidebar-sticky" style="background-color:rgb(42, 39, 39)">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="dashboard.html">
+                                <h3> <i class="fas fa-home">Dashboard</i></h3>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="searchOnMap.html">
+                                   <h3><i class="fas fa-route">Add Route</i></h3>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="myprofile.html">
+                                    <h3><i class="fas fa-heart">My Profile</i></h3>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="favourite.html">
+                                <h3> <i class="fas fa-plus-circle">Favourite</i></h3>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ContactUs.html">
+                                    <h3><i class="fas fa-user">ContactUs</i></h3>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">
+                                <h3><i class="fas fa-sign-out-alt">Blog</i></h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            <!-- Main content area -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dashboard</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <button class="btn btn-sm btn-outline-secondary">Add Route</button>
+                    </div>
+                </div>
+
+                <!-- Your dashboard content goes here -->
+                <div class="container">
+                    <h2>Welcome to your Dashboard!</h2>
+
+                    <section style="background-color: #ffffff; padding: 20px; margin-bottom: 20px;">
+                        <h3>Recent Routes</h3>
+                        <div class="card-deck">
+                            <!-- Route Card 1 -->
+                            <div class="card">
+                                <a href="thumbnail1.html">
+                                    <img src="https://www.tourism-of-india.com/blog/wp-content/uploads/2018/11/gateway-of-india.jpg" class="card-img-top" alt="Route Image 1">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Gateway of India</h5>
+                                    <p class="card-text">It is primarily famous for large markets, mesmerising beaches, towering buildings, and exquisite five-star hotels.</p>
+
+                                    <!-- Star -->
+
+                                    <form action="#" method="post">
+                                        <div class="rating">
+                                            <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="5 stars"></label>
+                                            <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="4 stars"></label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="3 stars"></label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="2 stars"></label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="1 star"></label>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Route Card 2 -->
+                            <div class="card">
+                                <a href="thumbnail2.html">
+                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/144_20190423153914.jpg" class="card-img-top" alt="Route Image 2">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Trimbakeshwar</h5>
+                                    <p class="card-text">Trimbakeshwar  Temple is a religious centre having one of the twelve Jyotirlingas .</p>
+                                    <!-- Star -->
+
+                                    <form action="#" method="post">
+                                        <div class="rating">
+                                            <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="5 stars"></label>
+                                            <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="4 stars"></label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="3 stars"></label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="2 stars"></label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="1 star"></label>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div> 
+
+                            <!-- Route Card 3 -->
+                            <div class="card">
+                                <a href="thumbnail3.html">
+                                    <img src="https://i.pinimg.com/originals/a5/9d/94/a59d941c3dc901f8806968025e8c94e3.jpg" class="card-img-top" alt="Route Image 3">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Kedarnath Temple</h5>
+                                    <p class="card-text">The temple is part of the Char Dham Yatra, a pilgrimage circuit that also includes Badrinath, Yamunotri, and Gangotri.</p>
+                                    <!-- Star -->
+
+                                    <form action="#" method="post">
+                                        <div class="rating">
+                                            <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="5 stars"></label>
+                                            <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="4 stars"></label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="3 stars"></label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="2 stars"></label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="1 star"></label>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Route Card 4 -->
+                            <div class="card">
+                                <a href="thumbnail4.html">
+                                    <img src="https://www.holidify.com/images/cmsuploads/compressed/5978780222_664fb8896e_b_20190403112947_20190403113009.jpg" class="card-img-top" alt="Route Image 4">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Deekshabhoomi</h5>
+                                    <p class="card-text">Deekshabhoomi is in Nagpur, Maharashtra, a location regarded as a sacred place</p>
+                                    <!-- Star -->
+
+                                    <form action="#" method="post">
+                                        <div class="rating">
+                                            <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="5 stars"></label>
+                                            <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="4 stars"></label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="3 stars"></label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="2 stars"></label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="1 star"></label>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </section>
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
